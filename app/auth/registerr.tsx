@@ -10,12 +10,9 @@ export default function RegisterScreen() {
 
   return (
     <View style={styles.container}>
-      <Image
-        source={{ uri: "https://cdn-icons-png.flaticon.com/512/2921/2921822.png" }}
-        style={styles.logo}
-      />
-
-      <Text style={styles.title}>Qeydiyyatdan keç 🥙</Text>
+       <Image source={require("../../assets/images/logo.jpg")} style={styles.foodImage} />
+     
+      <Text style={styles.title}>Qeydiyyatdan keç</Text>
 
       <TextInput
         style={styles.input}
@@ -72,5 +69,6 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   buttonText: { color: "#fff", fontWeight: "bold", fontSize: 18 },
+   foodImage: { width: 120, height: 120, marginBottom: 40, borderRadius: 10 },
   link: { color: "#00AA13", fontWeight: "bold" },
 });

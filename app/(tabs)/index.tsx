@@ -31,7 +31,7 @@ export default function HomeScreen() {
 
       <TouchableOpacity
         style={[styles.button, { backgroundColor: "#15a326ff" }]}
-        onPress={() => alert("Menyu gələcək 🍕")}
+        onPress={()=>router.push("/menu")}
       >
         <Text style={styles.buttonText}>Menyuya Bax</Text>
       </TouchableOpacity>

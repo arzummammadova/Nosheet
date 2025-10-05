@@ -9,12 +9,9 @@ export default function LoginScreen() {
 
   return (
     <View style={styles.container}>
-      <Image
-        source={{ uri: "https://cdn-icons-png.flaticon.com/512/1046/1046784.png" }}
-        style={styles.logo}
-      />
+     <Image source={require("../../assets/images/logo.jpg")} style={styles.foodImage} />
 
-      <Text style={styles.title}>Daxil ol 🥗</Text>
+      <Text style={styles.title}>Daxil ol</Text>
 
       <TextInput
         style={styles.input}
@@ -45,7 +42,7 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: "center", alignItems: "center", padding: 20, backgroundColor: "#fff" },
   logo: { width: 100, height: 100, marginBottom: 20 },
-  title: { fontSize: 24, fontWeight: "bold", marginBottom: 20, color: "#00AA13" },
+  title: { fontSize: 26, fontWeight: "bold", marginBottom: 20, color: "#00AA13" },
   input: {
     width: "100%",
     height: 50,
@@ -65,5 +62,6 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   buttonText: { color: "#fff", fontWeight: "bold", fontSize: 18 },
+   foodImage: { width: 120, height: 120, marginBottom: 40, borderRadius: 10 },
   link: { color: "#00AA13", fontWeight: "bold" },
 });

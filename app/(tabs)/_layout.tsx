@@ -38,7 +38,14 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="magnifyingglass" color={color} />,
         }}
       />
-
+      <Tabs.Screen
+        name="menu"
+        options={{
+          title: 'Menyu', // Burada adı dəyişirik
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="fork.knife" color={color} />
+          ,
+        }}
+      />
       <Tabs.Screen
         name="settings"
         options={{
@@ -46,6 +53,8 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="gearshape.fill" color={color} />,
         }}
       />
+
+
     </Tabs>
   );
 }
